@@ -1,0 +1,10 @@
+@import "./global.css";
+@import "./header.css";
+
+/* valores para alinhar o site
+-----------------------------------
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+*/
+
