@@ -4,12 +4,16 @@
 /* Paginas do CSS */
 @import "./global.css";
 @import "./header.css";
-@import "./introducao.css"
+@import "./introducao.css";
+@import "./experiencia.css";
 
-/* valores para alinhar o site
+/* valores para alinhar o site class:container
 -----------------------------------
     max-width: 1200px;
-    display: flex;
+    padding: 40px 20px;
     margin: 0 auto;
-*/
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
 
+*/
