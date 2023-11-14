@@ -42,8 +42,65 @@ span.hard-skills-instituicao {
 }
 
 h3.curso {
+   flex: 1; /* agora o item vai crescer o maximo possivel*/ 
    font-size: 1.125rem;
    line-height: 1.4;
    margin-bottom: 40px;
    position: relative;
 }
+
+h3.curso::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#b6f829, #67dd0a);
+    position: absolute;
+    left: -24px;
+}
+
+span.carga-horaria {
+    font-size: 1.125rem;
+    color: #a3a3a3;
+}
+
+div.cursos-antigos {
+    margin-bottom: 60px;
+
+}
+
+div.outros-cursos h3 {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+div.outros-cursos li {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+
+}
+
+div.outros-cursos h3::before {
+    display: block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url("../img/detalhe\ do\ titulo\ right.svg")no-repeat center;
+    position: absolute;
+    left: -18px;
+}
+
+div.outros-cursos span {
+    color: #8f8f8f;
+}
+
+div.cursos-antigos li {
+    display: flex;
+    justify-content: space-between;
+}
+
