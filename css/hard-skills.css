@@ -1,0 +1,49 @@
+.hard-skills {
+    background: #141414;
+    color: #fff;
+}
+.hard-skills .subtitulo {
+    color: #000;
+}
+
+.hard-skills-txt {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: #a3a3a3;
+}
+
+.hard-skills-txt strong {
+    color: #fff;
+}
+
+.hard-skills-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+li.hard-skills-curso {
+    flex: 1; /*Mantem todos os intens do mesmo tamanho*/
+    background: #000;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex; /*assim funciona o margin aplicado no span*/
+    flex-direction: column;
+}
+
+span.hard-skills-instituicao {
+    font-size: .875rem;
+    text-transform: uppercase;
+    color: #a3a3a3;
+    margin-bottom: 10px;
+}
+
+h3.curso {
+   font-size: 1.125rem;
+   line-height: 1.4;
+   margin-bottom: 40px;
+   position: relative;
+}

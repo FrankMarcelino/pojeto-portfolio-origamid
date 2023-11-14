@@ -18,7 +18,7 @@
     color: #141414;
 }
 
-.empresa {
+.projeto {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px 20px;
@@ -41,7 +41,7 @@
     text-align: left;
 }
 
-.projeto {
+.projeto-subtitulo {
     font-size: 1.125rem;
     line-height: 1.1;
     font-weight: bold;
@@ -66,4 +66,32 @@
     border-radius: 4px;
     background: #ffffff;
     padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+    .experiencia {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .experiencia .subtitulo {
+    color: #39d353;
+    }
+
+    .experiencia-txt {
+        font-size: 1.25rem;
+    }
+
+    .data-projeto {
+        position: initial;
+        order: 1;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 400px) {
+    .projeto {
+        grid-template-columns: 1fr;
+    }
 }
