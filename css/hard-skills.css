@@ -1,9 +1,21 @@
+.hard-skills-container {
+    padding: 120px 20px;
+}
+
 .hard-skills {
     background: #141414;
     color: #fff;
 }
-.hard-skills .subtitulo {
+.hard-skills h2.subtitulo {
     color: #000;
+    max-width: 1ch;
+    position: relative;
+}
+
+.hard-skills h2.subtitulo span {
+    position: absolute;
+    left: 100px;
+    top: 100px;
 }
 
 .hard-skills-txt {
@@ -104,3 +116,25 @@ div.cursos-antigos li {
     justify-content: space-between;
 }
 
+@media (max-width: 800px) {
+    div.hard-skills-container {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .hard-skills-container h2.subtitulo {
+        color: #fff;
+     
+        position: initial;
+    }
+
+    .hard-skills h2.subtitulo span {
+        position: initial;
+    }
+
+
+    p.hard-skills-txt {
+        font-size: 1.2rem;
+    }
+}
